@@ -1,0 +1,131 @@
+<html>
+<head>
+<title> Invest today</title>
+<style>
+body{
+	/* background-image:	url("images/back.jpg"); */
+	background-color:	#449465;
+	color:				#1b8043;
+	text-align:			center;
+	font-size:			300%;
+	}
+	
+	h1{
+		text-decoration:	underline;
+		
+		}
+	
+	</style>
+
+</head>
+<body>
+<h1> Invest with us</h1>
+<h2>  Invest and sit back while we do the work!</h2>
+
+ <script>
+/* var word = "bottles";
+var count = 99;
+while (count > 0) 
+{
+console.log(count + " " + word + " of beer on the wall");
+console.log(count + " " + word + " of beer,");
+console.log("Take one down, pass it around,");
+count = count - 1;
+if (count > 0) {
+console.log(count + " " + word + " of beer on the wall.");
+} else {
+console.log("No more " + word + " of beer on the wall.");
+}
+}
+ */
+ 
+
+ // Declaring all variables that will be used in program
+ var ammount ;
+ var result;
+ var interest = 0;
+ var monthly;
+ 
+ 
+ //Runs while no value has been entered
+ while (ammount == null)
+ 
+ ammount = prompt(" Please enter an ammount to invest and calculate interest");
+ 
+ {
+	//Set interest to be at 3% if ammount is less than 2500
+	if (ammount < 2500)
+	{
+		interest = ammount * (3/100);
+		monthly = (interest / 12);
+		
+		alert("The monthly interest on R" + ammount + " is R" + monthly + " !");
+		}
+		
+		//Set interest to be 3.5% if the ammount entered is between 2500 & 24999
+		else if (ammount => 2500 && ammount < 25000)
+		{
+			interest = ammount * (3,5/100);
+			monthly = interest / 12;
+			
+			alert("The monthly interest on R" + ammount + " is R" + monthly + " !");
+			}
+			
+			//Set interest to be 3.75% if the ammount entered is between 25000 & 49999
+		else if (ammount => 25000 && ammount < 50000)
+		{
+			interest = ammount * (3,75/100);
+			monthly = interest / 12;
+			alert("The monthly interest on R" + ammount + " is R" + monthly + " !");
+			}
+			
+			//Set interest to be 4% if the ammount entered is between 50000 & 99999
+		else if (ammount => 50000 && ammount < 100000)
+		{
+			interest = ammount * (4/100);
+			monthly = interest / 12;
+			alert("The monthly interest on R" + ammount + " is R" + monthly + " !");
+			}
+			
+			//Set interest to be 4% if the ammount entered is between 100000 & 250000
+		else if (ammount => 100000 && ammount < 250000)
+		{
+			interest = ammount * (4/100);
+			monthly = interest / 12;
+			alert("The monthly interest on R" + ammount + " is R" + monthly + " !");
+			}
+			
+			//Set interest to be 4.10% if the ammount entered is between 250000 & 500000
+		else if (ammount => 250000 && ammount < 500000)
+		{
+			interest = ammount * (4,1/100);
+			monthly = interest / 12;
+			alert("The monthly interest on R" + ammount + " is R" + monthly + " !");
+			}
+			
+			//Set interest to be 4.10% if the ammount entered is between 500 000 & 1 000 000
+		else if (ammount => 500000 && ammount < 1000000)
+		{
+			interest = ammount * (4,1/100);
+			monthly = interest / 12;
+			alert("The monthly interest on R" + ammount + " is R" + monthly + " !");
+			}
+			
+			//Set interest to be 4.10% if the ammount entered is more than or equal to R1 000 000
+		else if ( ammount >= 1000000)
+			{
+				interest = ammount * (4,1/100);
+				monthly = interest / 12;
+				alert("The monthly interest on R" + ammount + " is R" + monthly + "! R" + monthly +
+				" IS A LOT OF MONEY!!!");
+			}
+		else
+			{
+				alert("Please enter a valid ammount");
+				location.reload();
+			}
+ }
+	
+</script>
+</body>
+</html>
